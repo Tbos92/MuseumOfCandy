@@ -88,7 +88,7 @@
         </div>
         <div class="col-md-6 px-0 text-center order-1 order-md-2">
           <div class="row justify-content-center">
-            <div class="col-10 blurb">
+            <div class="col-10 blurb mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 class="d-none d-lg-inline"
@@ -112,7 +112,31 @@
         </div>
         <div class="col-md-6 px-0 text-center order-1 order-md-1">
           <div class="row justify-content-center">
-            <div class="col-10 blurb">
+            <div class="col-10 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img
+                class="d-none d-lg-inline"
+                src="imgs/lolli_icon.png"
+                alt=""
+              />
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Obcaecati, nobis aliquid? Incidunt veritatis provident ut
+                numquam labore alias quis quam, quo, explicabo expedita
+                excepturi. Veritatis recusandae fuga dolorum minus
+                necessitatibus aspernatur magnam vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 px-0 order-2 order-md-1">
+          <img class="img-fluid" src="imgs/sprinkles.png" alt="" />
+        </div>
+        <div class="col-md-6 px-0 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 blurb mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 class="d-none d-lg-inline"
@@ -148,5 +172,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
